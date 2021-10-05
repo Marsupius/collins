@@ -38,7 +38,7 @@ public class MessageTextTest {
         String result = instance.getSource();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     
@@ -53,7 +53,7 @@ public class MessageTextTest {
         String result = instance.getLocation();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     
@@ -68,7 +68,7 @@ public class MessageTextTest {
         int result = instance.getTimeRemaining();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
     /**
@@ -81,7 +81,7 @@ public class MessageTextTest {
         MessageText instance = new MessageText("Herb Patch", "Falador", 5);
         instance.setSource(source);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -94,7 +94,7 @@ public class MessageTextTest {
         MessageText instance = new MessageText("Herb Patch", "Falador", 5);
         instance.setLocation(location);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
 
@@ -108,7 +108,7 @@ public class MessageTextTest {
         MessageText instance = new MessageText("Herb Patch", "Falador", 5);
         instance.setTimeRemaining(timeRemaining);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }

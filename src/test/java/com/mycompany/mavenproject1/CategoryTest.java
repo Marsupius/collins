@@ -48,7 +48,7 @@ public class CategoryTest {
         Color result = instance.getNotificationColor();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -62,7 +62,7 @@ public class CategoryTest {
         int result = instance.getNotificationIcon();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
     /**
@@ -75,7 +75,7 @@ public class CategoryTest {
         Category instance = new Category(Color.GREEN, 1);
         instance.setNotificationColor(notificationColor);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
 
@@ -89,7 +89,7 @@ public class CategoryTest {
         Category instance = new Category(Color.GREEN, 1);
         instance.setNotificationIcon(notificationIcon);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
