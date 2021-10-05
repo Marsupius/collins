@@ -9,13 +9,14 @@ package com.mycompany.mavenproject1;
  *
  * @author joc6
  */
-public class MessageText {
+public class MessageText extends Notification{
 
     private String source;
     private String location;
     private int timeRemaining; //should get from timer
 
-    public MessageText(String currentSource, String currentLocation, int currentTimeRemaining) {
+    public MessageText(String currentSource, String currentLocation, int currentTimeRemaining, String message) {
+        super(message); //added for superclass
         this.source = currentSource;
         this.location = currentLocation;
         this.timeRemaining = currentTimeRemaining;

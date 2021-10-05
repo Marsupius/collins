@@ -33,7 +33,7 @@ public class MessageTextTest {
     @Test
     public void testGetSource() {
         System.out.println("getSource");
-        MessageText instance = new MessageText("Herb Patch", "Falador", 5);
+        MessageText instance = new MessageText("Herb Patch", "Falador", 5, "message");
         String expResult = "Herb Patch";
         String result = instance.getSource();
         assertEquals(expResult, result);
@@ -48,7 +48,7 @@ public class MessageTextTest {
     @Test
     public void testGetLocation() {
         System.out.println("getLocation");
-        MessageText instance = new MessageText("Herb Patch", "Falador", 5);
+        MessageText instance = new MessageText("Herb Patch", "Falador", 5, "message");
         String expResult = "Falador";
         String result = instance.getLocation();
         assertEquals(expResult, result);
@@ -63,7 +63,7 @@ public class MessageTextTest {
     @Test
     public void testGetTimeRemaining() {
         System.out.println("getTimeRemaining");
-        MessageText instance = new MessageText("Herb Patch", "Falador", 5);
+        MessageText instance = new MessageText("Herb Patch", "Falador", 5, "message");
         int expResult = 5;
         int result = instance.getTimeRemaining();
         assertEquals(expResult, result);
@@ -78,7 +78,7 @@ public class MessageTextTest {
     public void testSetSource() {
         System.out.println("setSource");
         String source = "Herb Patch";
-        MessageText instance = new MessageText("Herb Patch", "Falador", 5);
+        MessageText instance = new MessageText("Herb Patch", "Falador", 5, "message");
         instance.setSource(source);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -91,7 +91,7 @@ public class MessageTextTest {
     public void testSetLocation() {
         System.out.println("setLocation");
         String location = "Falador";
-        MessageText instance = new MessageText("Herb Patch", "Falador", 5);
+        MessageText instance = new MessageText("Herb Patch", "Falador", 5, "message");
         instance.setLocation(location);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -105,7 +105,7 @@ public class MessageTextTest {
     public void testSetTimeRemaining() {
         System.out.println("setTimeRemaining");
         int timeRemaining = 5;
-        MessageText instance = new MessageText("Herb Patch", "Falador", 5);
+        MessageText instance = new MessageText("Herb Patch", "Falador", 5, "message");
         instance.setTimeRemaining(timeRemaining);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");

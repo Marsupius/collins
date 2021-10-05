@@ -11,15 +11,17 @@ import java.awt.Color;
  *
  * @author joc6
  */
-public class Category {
+public class Category extends Notification{
 
     private Color notificationColor;
     private int notificationIcon;
 
-    public Category(Color currentSource, int currentLocation) {
+    public Category(Color currentSource, int currentLocation,  String message) {
+        super(message); //added for superclass
         this.notificationColor = currentSource;
         this.notificationIcon = currentLocation;
     }
+   
 
     public Color getNotificationColor() {
         return notificationColor;

@@ -43,7 +43,7 @@ public class CategoryTest {
     @org.junit.jupiter.api.Test
     public void testGetNotificationColor() {
         System.out.println("getNotificationColor");
-        Category instance = new Category(Color.GREEN, 1);
+        Category instance = new Category(Color.GREEN, 1, "message");
         Color expResult = Color.GREEN;
         Color result = instance.getNotificationColor();
         assertEquals(expResult, result);
@@ -57,7 +57,7 @@ public class CategoryTest {
     @org.junit.jupiter.api.Test
     public void testGetNotificationIcon() {
         System.out.println("getNotificationIcon");
-        Category instance = new Category(Color.GREEN, 1);
+        Category instance = new Category(Color.GREEN, 1, "message");
         int expResult = 1;
         int result = instance.getNotificationIcon();
         assertEquals(expResult, result);
@@ -72,7 +72,7 @@ public class CategoryTest {
     public void testSetNotificationColor() {
         System.out.println("setNotificationColor");
         Color notificationColor = Color.GREEN;
-        Category instance = new Category(Color.GREEN, 1);
+        Category instance = new Category(Color.GREEN, 1, "message");
         instance.setNotificationColor(notificationColor);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
@@ -86,7 +86,7 @@ public class CategoryTest {
     public void testSetNotificationIcon() {
         System.out.println("setNotificationIcon");
         int notificationIcon = 1;
-        Category instance = new Category(Color.GREEN, 1);
+        Category instance = new Category(Color.GREEN, 1, "message");
         instance.setNotificationIcon(notificationIcon);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
