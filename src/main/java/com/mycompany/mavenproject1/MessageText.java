@@ -21,12 +21,6 @@ public class MessageText {
         this.timeRemaining = currentTimeRemaining;
     }
 
-//public MessageText(){
-//
-//    String source = "";
-//    String location = "";
-//    int timeRemaining = 0;
-//}
     public String getSource() {
         return source;
     }
