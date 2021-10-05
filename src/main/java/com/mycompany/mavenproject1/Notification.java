@@ -25,4 +25,8 @@ public class Notification {
         this.message = message;
     }
 
+    public String toString()
+    {
+        return message;
+    }
 }

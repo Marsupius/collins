@@ -46,4 +46,9 @@ public class MessageText extends Notification{
         this.timeRemaining = timeRemaining;
     }
 
+    @Override
+    public String toString()
+    {
+        return "Source: " +source + "Location: " + location + "Time remaining: " + timeRemaining;
+    }
 }
