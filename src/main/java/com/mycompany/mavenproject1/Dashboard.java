@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author joc6
  */
-public class Dashboard {//probably will implement MessageText, Notification, others probably
+public class Dashboard implements Resettable{
 
     private ArrayList<Integer> activeNotifications; //data-type to change
     private ArrayList<Integer> display;//data-type to change
@@ -35,6 +35,11 @@ public class Dashboard {//probably will implement MessageText, Notification, oth
 
     public void setDisplay(ArrayList<Integer> display) {
         this.display = display;
+    }
+
+    @Override
+    public void reset() {
+        activeNotifications.clear();
     }
 
 }
