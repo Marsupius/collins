@@ -74,8 +74,10 @@ public class CategoryTest {
         Color notificationColor = Color.GREEN;
         Category instance = new Category(Color.GREEN, 1, "message");
         instance.setNotificationColor(notificationColor);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        
+        // now that you have set the notification color to GREEN,
+        // you need to see test that assumption
+        assertEquals(Color.GREEN, instance.getNotificationColor());
     }
 
 
