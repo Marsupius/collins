@@ -33,7 +33,7 @@ public class CenterPanel extends JPanel {
     {
         super();
         setLayout(new GridLayout());
-        title = new JButton("Connect Four");
+        title = new JButton("Plugin Main Panel");
         player1 = new JButton();
         player2 = new JButton();
         update = new JButton("Update");
