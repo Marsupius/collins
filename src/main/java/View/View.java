@@ -10,21 +10,40 @@ package View;
  * @author joc6
  */
 public class View {
-    InitialPanel iPanel;
+    // GUI attributes
     InitialFrame iFrame;
-    
-    public View(){
+    InitialPanel iPanel;
+    NorthPanel cPanel;
+    CenterPanel npanel;
+
+
+
+    public View() {
         iFrame = new InitialFrame();
         iPanel = iFrame.getiPanel();
+        cPanel = iFrame.getcPanel();
+        npanel = iFrame.getnPanel();
     }
 
-    
+
+    /*public void CenterInitialSetup(int lines, int headers) {
+        cPanel.setupCenterPanel(lines, headers);
+    }
+
+    public void CenterUpdate(ArrayList<ArrayList<String>> lines, ArrayList<String> headers) {
+        cPanel.panelUpdate(lines, headers);
+    }*/
+
+    public InitialFrame getiFrame() {
+        return iFrame;
+    }
+
     public InitialPanel getiPanel() {
         return iPanel;
     }
 
-    public InitialFrame getiFrame() {
-        return iFrame;
+    public NorthPanel getcPanel() {
+        return cPanel;
     }
     
 }

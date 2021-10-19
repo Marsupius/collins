@@ -5,11 +5,7 @@
  */
 package View;
 
-import java.awt.Color;
 import javax.swing.JFrame;
-import javax.swing.border.Border;
-import javax.swing.border.LineBorder;
-import static javax.swing.JFrame.EXIT_ON_CLOSE; //exit program when 'x' is clicked
 
 /**
  *
@@ -17,11 +13,15 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE; //exit program when 'x' is click
  */
 public class InitialFrame extends JFrame {
     InitialPanel iPanel;
-    Border border = new LineBorder(Color.BLACK, 8);
+    NorthPanel cPanel;
+    CenterPanel nPanel;
     
     public InitialFrame(){
         super("IST 440W Semester Project");
+        //setupLayoutForMacs(); ** if needed **
         iPanel = new InitialPanel();
+        cPanel = iPanel.getnPanel();
+        nPanel = iPanel.getcPanel();
         add(iPanel, "Center");
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -31,6 +31,14 @@ public class InitialFrame extends JFrame {
 
     public InitialPanel getiPanel() {
         return iPanel;
+    }
+
+    public NorthPanel getcPanel() {
+        return cPanel;
+    }
+
+    public CenterPanel getnPanel() {
+        return nPanel;
     }
     
 }
