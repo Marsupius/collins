@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.mavenproject1;
+package com.mycompany.Model;
+
+import java.util.ArrayList;
 
 /**
  *
@@ -13,7 +15,7 @@ public class TestHarness {
     
     public TestHarness(){
     //Testing MessageText class
-    MessageText testText = new MessageText("Ardougne", "Herb", 4);
+    MessageText testText = new MessageText("Ardougne", "Herb", 4, "message");
     if (testText != null){
         System.out.println("Test Text created successfully!"); 
         System.out.println("Location: " + testText.getLocation() + ", Icon: " + 
@@ -26,4 +28,8 @@ public class TestHarness {
         System.out.println("Test Notification: " + testNotification.getMessage());
     }
 }
+    public void testClassHeirarchy(){
+        ArrayList testCollection = new ArrayList();
+        
+    }
 }

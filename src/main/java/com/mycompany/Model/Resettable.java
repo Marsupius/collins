@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.mavenproject1;
+package com.mycompany.Model;
 
 /**
  *
  * @author joc6
  */
-public class RuneLiteApp {
-    public static void main (String[] args){
-        System.out.println("What's grappin");
-    }
+public interface Resettable {
+    
+    
+    public abstract void reset();
+    
 }

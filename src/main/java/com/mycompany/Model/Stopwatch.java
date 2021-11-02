@@ -3,15 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.mavenproject1;
-
-import java.util.Timer;
+package com.mycompany.Model;
 
 /**
  *
  * @author joc6
  */
-public class Stopwatch {
+public class Stopwatch implements Resettable{
 
     private int timer;
 
@@ -26,6 +24,11 @@ public class Stopwatch {
 
     public void setTimer(int timer) {
         this.timer = timer;
+    }
+
+    @Override
+    public void reset() {
+        timer = 0;
     }
 
 }

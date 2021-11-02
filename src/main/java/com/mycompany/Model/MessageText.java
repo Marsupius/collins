@@ -3,30 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.mavenproject1;
+package com.mycompany.Model;
 
 /**
  *
  * @author joc6
  */
-public class MessageText {
+public class MessageText extends Notification{
 
     private String source;
     private String location;
     private int timeRemaining; //should get from timer
 
-    public MessageText(String currentSource, String currentLocation, int currentTimeRemaining) {
+    public MessageText(String currentSource, String currentLocation, int currentTimeRemaining, String message) {
+        super(message); //added for superclass
         this.source = currentSource;
         this.location = currentLocation;
         this.timeRemaining = currentTimeRemaining;
     }
 
-//public MessageText(){
-//
-//    String source = "";
-//    String location = "";
-//    int timeRemaining = 0;
-//}
     public String getSource() {
         return source;
     }
@@ -51,4 +46,9 @@ public class MessageText {
         this.timeRemaining = timeRemaining;
     }
 
+    @Override
+    public String toString()
+    {
+        return "Source: " +source + "Location: " + location + "Time remaining: " + timeRemaining;
+    }
 }
