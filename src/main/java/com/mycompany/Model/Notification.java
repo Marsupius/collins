@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.mavenproject1;
+package com.mycompany.Model;
 
 /**
  *
@@ -25,4 +25,8 @@ public class Notification {
         this.message = message;
     }
 
+    public String toString()
+    {
+        return message;
+    }
 }
