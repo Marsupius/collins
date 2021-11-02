@@ -13,11 +13,12 @@ import com.mycompany.Model.Model;
  *
  * @author joc6
  */
-public class RuneLiteApp
+public class RLApp
 {
     public static void main (String[] args){
         View view = new View();
         Model model = new Model();
         Controller controller = new Controller(model, view);
+        System.out.println("It is open");
     }
 }
