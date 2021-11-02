@@ -2,7 +2,8 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
- */
+ *//*
+
 package com.mycompany.Model;
 
 import org.junit.jupiter.api.AfterAll;
@@ -10,10 +11,12 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+*/
 /**
  *
  * @author joc6
- */
+ *//*
+
 public class MessageTextTest {
     
     public MessageTextTest() {
@@ -27,9 +30,11 @@ public class MessageTextTest {
     public static void tearDownClass() {
     }
 
-    /**
+    */
+/**
      * Test of getSource method, of class MessageText.
-     */
+     *//*
+
     @Test
     public void testGetSource() {
         System.out.println("getSource");
@@ -42,9 +47,11 @@ public class MessageTextTest {
     }
 
     
-    /**
+    */
+/**
      * Test of getLocation method, of class MessageText.
-     */
+     *//*
+
     @Test
     public void testGetLocation() {
         System.out.println("getLocation");
@@ -57,9 +64,11 @@ public class MessageTextTest {
     }
 
     
-    /**
+    */
+/**
      * Test of getTimeRemaining method, of class MessageText.
-     */
+     *//*
+
     @Test
     public void testGetTimeRemaining() {
         System.out.println("getTimeRemaining");
@@ -71,9 +80,11 @@ public class MessageTextTest {
         //fail("The test case is a prototype.");
     }
     
-    /**
+    */
+/**
      * Test of setSource method, of class MessageText.
-     */
+     *//*
+
     @Test
     public void testSetSource() {
         System.out.println("setSource");
@@ -84,9 +95,11 @@ public class MessageTextTest {
         //fail("The test case is a prototype.");
     }
 
-    /**
+    */
+/**
      * Test of setLocation method, of class MessageText.
-     */
+     *//*
+
     @Test
     public void testSetLocation() {
         System.out.println("setLocation");
@@ -98,9 +111,11 @@ public class MessageTextTest {
     }
 
 
-    /**
+    */
+/**
      * Test of setTimeRemaining method, of class MessageText.
-     */
+     *//*
+
     @Test
     public void testSetTimeRemaining() {
         System.out.println("setTimeRemaining");
@@ -112,3 +127,4 @@ public class MessageTextTest {
     }
     
 }
+*/

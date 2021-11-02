@@ -14,40 +14,24 @@ public class NorthPanel extends JPanel {
 
     NorthPanel nPanel;
 
-    private JButton title;
-    private JButton player;
-    private JTextField playerName;
-    private JButton next;
-    private JButton previous;
-    private JButton add;
-    private JButton edit;
-    private JButton delete;
-    Border border = new LineBorder(Color.BLACK, 3);
+    private JButton nextButton;
+    private JButton lastButton;
+    private JButton addButton;
+    private JButton deleteButton;
 
     public NorthPanel()
     {
         super();
         setLayout(new GridLayout());
-        title = new JButton("Plugin Main Panel");
-        player = new JButton();
-        playerName = new JTextField("Enter RSIGN(RuneScape In-game name): ");
-        next = new JButton("Next");
-        previous = new JButton("Previous");
-        add = new JButton("Add");
-        edit = new JButton("Edit");
-        delete = new JButton("Delete");
-        title.setHorizontalAlignment(JLabel.CENTER);
-        title.setBackground(Color.BLACK);
-        title.setForeground(Color.WHITE);
-        player.setBorder(border);
-        add(title);
-        add(player);
-        add(playerName);
-        add(next);
-        add(previous);
-        add(add);
-        add(edit);
-        add(delete);
+        nextButton = new JButton("Next");
+        lastButton = new JButton("Previous");
+        addButton = new JButton("Add");
+        deleteButton = new JButton("Delete");
+        add(nextButton);
+        add(lastButton);
+        add(addButton);
+        add(deleteButton);
+
         validate();
         repaint();
     }

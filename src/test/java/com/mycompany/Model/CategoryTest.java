@@ -2,17 +2,20 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
- */
+ *//*
+
 package com.mycompany.Model;
 
 import java.awt.Color;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+*/
 /**
  *
  * @author joc6
- */
+ *//*
+
 public class CategoryTest {
     
     public CategoryTest() {
@@ -35,9 +38,11 @@ public class CategoryTest {
 //    public static void tearDownClass() {
 //    }
 
-    /**
+    */
+/**
      * Test of getNotificationColor method, of class Category.
-     */
+     *//*
+
     @org.junit.jupiter.api.Test
     public void testGetNotificationColor() {
         System.out.println("getNotificationColor");
@@ -49,9 +54,11 @@ public class CategoryTest {
         //fail("The test case is a prototype.");
     }
 
-    /**
+    */
+/**
      * Test of getNotificationIcon method, of class Category.
-     */
+     *//*
+
     @org.junit.jupiter.api.Test
     public void testGetNotificationIcon() {
         System.out.println("getNotificationIcon");
@@ -63,9 +70,11 @@ public class CategoryTest {
         //fail("The test case is a prototype.");
     }
     
-    /**
+    */
+/**
      * Test of setNotificationColor method, of class Category.
-     */
+     *//*
+
     @org.junit.jupiter.api.Test
     public void testSetNotificationColor() {
         System.out.println("setNotificationColor");
@@ -79,9 +88,11 @@ public class CategoryTest {
     }
 
 
-    /**
+    */
+/**
      * Test of setNotificationIcon method, of class Category.
-     */
+     *//*
+
     @org.junit.jupiter.api.Test
     public void testSetNotificationIcon() {
         System.out.println("setNotificationIcon");
@@ -93,3 +104,4 @@ public class CategoryTest {
     }
     
 }
+*/

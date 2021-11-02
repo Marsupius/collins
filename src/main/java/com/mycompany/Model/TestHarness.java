@@ -2,15 +2,18 @@
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
- */
+ *//*
+
 package com.mycompany.Model;
 
 import java.util.ArrayList;
 
+*/
 /**
  *
  * @author joc6
- */
+ *//*
+
 public class TestHarness {
     
     public TestHarness(){
@@ -32,4 +35,4 @@ public class TestHarness {
         ArrayList testCollection = new ArrayList();
         
     }
-}
+}*/

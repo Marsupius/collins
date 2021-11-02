@@ -11,6 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="collins" target="1.8" />
+      <module name="RuneLiteApp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc839d76-9927-400b-843d-c042529ee52f" name="Changes" comment="Rename model class to RLApp" />
+    <list default="true" id="dc839d76-9927-400b-843d-c042529ee52f" name="Changes" comment="Rename model class to RLApp">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collins.iml" beforeDir="false" afterPath="$PROJECT_DIR$/collins.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App/RuneLiteApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/RLApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/CenterPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CenterPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/NorthPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/NorthPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/MessageText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/MessageText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/ModelList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/TestHarness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/TestHarness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/CategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/MessageTextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/MessageTextTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,8 +77,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RLApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App.RLApp" />
+      <module name="collins" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RLApp" />
         <item itemvalue="Application.RLApp" />
       </list>
     </recent_temporary>

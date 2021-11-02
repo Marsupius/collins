@@ -16,8 +16,8 @@ public class Category extends Notification {
     private Color notificationColor;
     private int notificationIcon;
 
-    public Category(Color currentSource, int currentLocation, String message) {
-        super(message); //added for superclass
+    public Category(Color currentSource, int currentLocation, String location, String subject, String timeLeft) {
+        super(location, subject, timeLeft); //added for superclass
         this.notificationColor = currentSource;
         this.notificationIcon = currentLocation;
     }

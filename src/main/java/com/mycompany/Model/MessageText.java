@@ -15,8 +15,8 @@ public class MessageText extends Notification{
     private String location;
     private int timeRemaining; //should get from timer
 
-    public MessageText(String currentSource, String currentLocation, int currentTimeRemaining, String message) {
-        super(message); //added for superclass
+    public MessageText(String currentSource, String currentLocation, int currentTimeRemaining, String location, String subject, String timeLeft) {
+        super(location, subject, timeLeft); //added for superclass
         this.source = currentSource;
         this.location = currentLocation;
         this.timeRemaining = currentTimeRemaining;

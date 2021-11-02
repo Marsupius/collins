@@ -11,22 +11,23 @@ package com.mycompany.Model;
  */
 public class Notification {
 
-    private String message; //possibly change/combine with message text to make/send notifications in one
+    private String location;
+    private String subject;
+    private String timeLeft;
 
-    public Notification(String actualMessage) {
-        this.message = actualMessage;
+    public Notification(String location, String subject, String timeLeft) {
+        this.location = location;
+        this.subject = subject;
+        this.timeLeft = timeLeft;
     }
 
-    public String getMessage() {
-        return message;
+    public String getSubject() {
+        return subject;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public String toString()
-    {
-        return message;
+    @Override
+    public String toString() {
+        return "Notification{" + "location='" + location + '\'' + ", subject='" + subject + '\'' + ", timeLeft='" +
+                timeLeft + '\'' + '}';
     }
 }
