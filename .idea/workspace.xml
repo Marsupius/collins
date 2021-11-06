@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc839d76-9927-400b-843d-c042529ee52f" name="Changes" comment="M, V, C better setup">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/SuperList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/InheritanceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/PolyTest.java" afterDir="false" />
+    <list default="true" id="dc839d76-9927-400b-843d-c042529ee52f" name="Changes" comment="All but test classes for poly/inheritance">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Colorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/Ferrari.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/Jeep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Displayable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Resettable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Printable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Stopwatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Stopwatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/TestHarness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/TestHarness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/CenterPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CenterPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/InitialFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/InitialFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/InheritanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/InheritanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/PolyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/PolyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/TestHarness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/TestHarness.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -58,6 +58,7 @@
       <recent name="C:\Users\Joe\IdeaProjects\collins\src\test\java\com\mycompany\Model" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.mycompany.Model" />
       <recent name="App" />
     </key>
   </component>
@@ -132,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635888047395</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="All but test classes for poly/inheritance">
+      <created>1636207522575</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636207522575</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +173,7 @@
     <MESSAGE value="Packages created/classes reshuffled, view/controller/models updated" />
     <MESSAGE value="Rename model class to RLApp" />
     <MESSAGE value="M, V, C better setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="M, V, C better setup" />
+    <MESSAGE value="All but test classes for poly/inheritance" />
+    <option name="LAST_COMMIT_MESSAGE" value="All but test classes for poly/inheritance" />
   </component>
 </project>

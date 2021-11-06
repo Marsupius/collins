@@ -14,8 +14,8 @@ public class CenterPanel extends JPanel {
     {
         super();
         setLayout(new GridLayout());
-        list.setModel();
-        add(list);
+        /*list.setModel();
+        add(list);*/
         validate();
         repaint();
     }
