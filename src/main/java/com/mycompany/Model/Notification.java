@@ -9,7 +9,7 @@ package com.mycompany.Model;
  *
  * @author joc6
  */
-public class Notification {
+public class Notification extends SuperList implements Printable{
 
     private String location;
     private String subject;
@@ -29,5 +29,13 @@ public class Notification {
     public String toString() {
         return "Notification{" + "location='" + location + '\'' + ", subject='" + subject + '\'' + ", timeLeft='" +
                 timeLeft + '\'' + '}';
+    }
+
+    @Override
+    public void print() {
+        System.out.println("Printing Notification");
+    }
+    public void task(){
+        System.out.println("Notification Task");
     }
 }

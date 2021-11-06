@@ -9,9 +9,9 @@ package com.mycompany.Model;
  *
  * @author joc6
  */
-public interface Resettable {
+public interface Printable {
     
     
-    public abstract void reset();
+    public void print();
     
 }

@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc839d76-9927-400b-843d-c042529ee52f" name="Changes" comment="Rename model class to RLApp">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="dc839d76-9927-400b-843d-c042529ee52f" name="Changes" comment="M, V, C better setup">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/SuperList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/InheritanceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/PolyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collins.iml" beforeDir="false" afterPath="$PROJECT_DIR$/collins.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App/RuneLiteApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/RLApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/CenterPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/CenterPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/NorthPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/NorthPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/MessageText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/MessageText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/ModelList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Displayable.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/TestHarness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/TestHarness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/CategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/MessageTextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/MessageTextTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Resettable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Printable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Stopwatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Stopwatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/TestHarness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/TestHarness.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +50,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="E:/IST 261/Project2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/mycompany/Model" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Joe\IdeaProjects\collins\src\test\java\com\mycompany\Model" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="App" />
     </key>
@@ -127,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635871663235</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="M, V, C better setup">
+      <created>1635888047395</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1635888047395</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,6 +164,7 @@
     <MESSAGE value="Test commit/push from intellij" />
     <MESSAGE value="Packages created/classes reshuffled, view/controller/models updated" />
     <MESSAGE value="Rename model class to RLApp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename model class to RLApp" />
+    <MESSAGE value="M, V, C better setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="M, V, C better setup" />
   </component>
 </project>

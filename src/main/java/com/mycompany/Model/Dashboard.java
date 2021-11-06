@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author joc6
  */
-public class Dashboard implements Resettable{
+public class Dashboard implements Printable {
 
     private ArrayList<Integer> activeNotifications; //data-type to change
     private ArrayList<Integer> display;//data-type to change
@@ -37,9 +37,9 @@ public class Dashboard implements Resettable{
         this.display = display;
     }
 
-    @Override
-    public void reset() {
-        activeNotifications.clear();
-    }
 
+    @Override
+    public void print() {
+
+    }
 }

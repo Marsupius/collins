@@ -9,7 +9,7 @@ package com.mycompany.Model;
  *
  * @author joc6
  */
-public class Stopwatch implements Resettable{
+public class Stopwatch implements Printable {
 
     private int timer;
 
@@ -27,8 +27,10 @@ public class Stopwatch implements Resettable{
     }
 
     @Override
-    public void reset() {
-        timer = 0;
+    public void print() {
+        System.out.println("Printing Stopwatch");
     }
-
+    public void task(){
+        System.out.println("Stopwatch Task");
+    }
 }
