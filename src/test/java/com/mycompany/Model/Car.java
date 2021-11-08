@@ -1,6 +1,8 @@
 package com.mycompany.Model;
 
 public class Car implements Colorable{
+    //super class
+
     public void honk(){
         System.out.println("Car sound");
     }

@@ -36,17 +36,30 @@ public class TestHarness {
         System.out.println("Test Notification created successfully!");
         System.out.println("Test Notification: " + testNotification.getMessage());
     }*/
-        ArrayList<Colorable> paintShop = new ArrayList<>();
-        ArrayList<Car> carShop = new ArrayList<>();
+
+}
+    public void testClassHeirarchy(){
+        ArrayList<Colorable> paintShop = new ArrayList<>(); //interface test array
+        ArrayList<Car> carShop = new ArrayList<>();//polymorphism test array
+        Ferrari ferrari = new Ferrari();
+        Jeep jeep = new Jeep();
+
+
+        paintShop.add(ferrari);
+        paintShop.add(jeep);
+
+        carShop.add(ferrari);
+        carShop.add(jeep);
+
+        //Poly test loop
         for (int i = 0; i < carShop.size(); i++){
             carShop.get(i).honk();
         }
+
+        //Interface test loop
         for (int i = 0; i < paintShop.size(); i++){
             paintShop.get(i).color();
         }
-}
-    public void testClassHeirarchy(){
-        ArrayList testCollection = new ArrayList();
         
     }
 }

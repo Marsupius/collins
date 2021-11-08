@@ -2,7 +2,7 @@ package com.mycompany.Model;
 
 import java.util.ArrayList;
 
-public class InheritanceTest {
+public class PolyInheritanceTest {//NOT NECESSARY, DELETE LATER
     ArrayList<Car> carShop = new ArrayList<>();
     Ferrari ferrari = new Ferrari();
     Jeep jeep = new Jeep();
