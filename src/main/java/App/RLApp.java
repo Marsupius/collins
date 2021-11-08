@@ -16,12 +16,10 @@ import com.mycompany.Model.Model;
 public class RLApp
 {
     public static void main (String[] args){
-        TestHarness testHarness = new TestHarness();
         View view = new View();
         Model model = new Model();
         Controller controller = new Controller(model, view);
 
         System.out.println("App Started");
-        testClassHeirarchy();
     }
 }
