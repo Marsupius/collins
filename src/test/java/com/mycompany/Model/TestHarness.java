@@ -24,8 +24,8 @@ import java.util.ArrayList;
 
 public class TestHarness {
     public static void main (String[] args){
-
         System.out.println("Test Started");
+        new TestHarness();
         ArrayList<Colorable> paintShop = new ArrayList<>(); //interface test array
         ArrayList<Car> carShop = new ArrayList<>();//polymorphism test array
         Ferrari ferrari = new Ferrari();
