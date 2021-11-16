@@ -5,11 +5,13 @@
  */
 package com.mycompany.Model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author joc6
  */
-public class Notification extends SuperList implements Printable{
+public class Notification extends SuperList implements Printable, Serializable {
 
     private String location;
     private String subject;

@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc839d76-9927-400b-843d-c042529ee52f" name="Changes" comment="trying to run tests">
+    <list default="true" id="dc839d76-9927-400b-843d-c042529ee52f" name="Changes" comment="Polymorphism/Inheritance Tests complete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App/RLApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/RLApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/TestHarness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/Model/TestHarness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/InitialFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/InitialFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Notification.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +46,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/mycompany/Model" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="E:/IST 261/runelitetest" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -55,7 +58,7 @@
       <recent name="App" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestHarness">
+  <component name="RunManager" selected="Application.RLApp">
     <configuration name="RLApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App.RLApp" />
       <module name="collins" />
@@ -97,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestHarness" />
         <item itemvalue="Application.RLApp" />
+        <item itemvalue="Application.TestHarness" />
         <item itemvalue="Application.RLApp" />
       </list>
     </recent_temporary>
@@ -161,7 +164,21 @@
       <option name="project" value="LOCAL" />
       <updated>1636344978589</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Polymorphism/Inheritance Tests complete">
+      <created>1636345816213</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1636345816213</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Polymorphism/Inheritance Tests complete">
+      <created>1636346056442</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1636346056442</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +214,7 @@
     <MESSAGE value="All but test classes for poly/inheritance" />
     <MESSAGE value="Working on test classes" />
     <MESSAGE value="trying to run tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to run tests" />
+    <MESSAGE value="Polymorphism/Inheritance Tests complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Polymorphism/Inheritance Tests complete" />
   </component>
 </project>

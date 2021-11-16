@@ -1,15 +1,19 @@
 package com.mycompany.Model;
 
+import sun.plugin2.ipc.windows.WindowsEvent;
+
 import javax.swing.*;
 import javax.swing.event.ListDataEvent;
 import javax.swing.event.ListDataListener;
+import java.awt.event.WindowAdapter;
+import java.io.*;
 import java.util.ArrayList;
 
 import static javax.swing.event.ListDataEvent.INTERVAL_ADDED;
 import static javax.swing.event.ListDataEvent.INTERVAL_REMOVED;
 
 
-public class Model implements ListModel<Notification> {
+public class Model extends WindowAdapter implements ListModel<Notification> {
     ArrayList<Notification> notifications = null;
     ArrayList<ListDataListener> listeners = null;
 
@@ -19,6 +23,22 @@ public class Model implements ListModel<Notification> {
         this.notifications.add(new Notification("Fossil Island", "Birdhouse Trap", "8:00:00"));
         this.notifications.add(new Notification("Port Phasmatys", "Herb Patch", "Done"));
 
+        //persistant data
+        FileInputStream fis;
+        ObjectInputStream ois;
+
+        try {
+            fis = new FileInputStream("NotificationList");
+            ois = new ObjectInputStream(fis);
+            this.notifications = (ArrayList <Notification>) ois.readObject();
+
+        } catch (FileNotFoundException e) {
+            System.out.println("File NotificationList does not exist");
+        } catch (IOException e) {
+            System.out.println("Cannot create object input stream");
+        } catch (ClassNotFoundException e) {
+            System.out.println("Something is wrong with the serialized file");
+        }
     }
     public void addNotification(Notification notifications) {
         this.notifications.add(notifications);
@@ -32,6 +52,17 @@ public class Model implements ListModel<Notification> {
             l.intervalAdded(
                     new ListDataEvent(this, INTERVAL_ADDED, this.notifications.size() - 1, this.notifications.size() - 1)
             );
+        }
+        //adding persistant data to file
+        FileOutputStream fos;
+        ObjectOutputStream oos;
+
+        try {
+            fos = new FileOutputStream("NotificationList");
+            oos = new ObjectOutputStream(fos);
+            oos.writeObject(this.notifications);
+        } catch (IOException ex ){
+            System.out.println("Something went wrong");
         }
     }
 
@@ -68,4 +99,12 @@ public class Model implements ListModel<Notification> {
     public void removeListDataListener(ListDataListener l) {
         this.listeners.remove(l);
     }
+
+    public void windowClosing(WindowsEvent e){
+        //save all notifications
+        //System.out.println("Window closing");
+        //persistant data
+
+    }
+
 }

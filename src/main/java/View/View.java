@@ -9,7 +9,7 @@ package View;
  *
  * @author joc6
  */
-public class View {
+public class View extends javax.swing.JFrame{
     // GUI attributes
     InitialFrame iFrame;
     InitialPanel iPanel;

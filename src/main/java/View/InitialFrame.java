@@ -26,7 +26,7 @@ public class InitialFrame extends JFrame {
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(1000, 500);
-        setVisible(false); //CHANGE TO REELABLE VIEW
+        setVisible(true); //ENABLE/DISABLE VIEW
     }
 
     public InitialPanel getiPanel() {

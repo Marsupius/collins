@@ -19,6 +19,7 @@ public class RLApp
         View view = new View();
         Model model = new Model();
         Controller controller = new Controller(model, view);
+        view.addWindowListener(model);
 
         System.out.println("App Started");
     }
