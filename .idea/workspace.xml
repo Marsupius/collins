@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc839d76-9927-400b-843d-c042529ee52f" name="Changes" comment="Polymorphism/Inheritance Tests complete">
+    <list default="true" id="dc839d76-9927-400b-843d-c042529ee52f" name="Changes" comment="data persistence">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App/RLApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App/RLApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/InitialFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/InitialFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Model/Notification.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636346056442</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="data persistence">
+      <created>1637104393884</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1637104393884</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +217,7 @@
     <MESSAGE value="Working on test classes" />
     <MESSAGE value="trying to run tests" />
     <MESSAGE value="Polymorphism/Inheritance Tests complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Polymorphism/Inheritance Tests complete" />
+    <MESSAGE value="data persistence" />
+    <option name="LAST_COMMIT_MESSAGE" value="data persistence" />
   </component>
 </project>
