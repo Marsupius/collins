@@ -11,7 +11,6 @@ import java.util.ArrayList;
 */
 
 import Controller.Controller;
-import View.View;
 import com.mycompany.Model.MessageText;
 import com.mycompany.Model.Notification;
 

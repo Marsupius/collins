@@ -6,7 +6,7 @@
 package App;
 
 import Controller.Controller;
-import View.View;
+import View.MainUI;
 import com.mycompany.Model.Model;
 
 /**
@@ -16,11 +16,48 @@ import com.mycompany.Model.Model;
 public class RLApp
 {
     public static void main (String[] args){
-        View view = new View();
+        //View view = new View();
         Model model = new Model();
-        Controller controller = new Controller(model, view);
-        view.addWindowListener(model);
+        //Controller controller = new Controller(model, view);
+        //view.addWindowListener(model);
+        
+        
+/* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(MainUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(MainUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(MainUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(MainUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                Model model = new Model();
+                Controller controller = new Controller(model);
+                MainUI view = new MainUI(controller);
+                view.setVisible(true);
+            }
+        });
+        
         System.out.println("App Started");
     }
 }

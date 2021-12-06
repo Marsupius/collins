@@ -12,14 +12,12 @@ package com.mycompany.Model;
 public class MessageText extends Notification{
 
     private String source;
-    private String location;
-    private int timeRemaining; //should get from timer
+    private String plot;
 
-    public MessageText(String currentSource, String currentLocation, int currentTimeRemaining, String location, String subject, String timeLeft) {
-        super(location, subject, timeLeft); //added for superclass
+    public MessageText(String currentSource, String currentLocation, int currentTimeRemaining, String location, String plot, String timeLeft) {
+        super(location, plot); //added for superclass
         this.source = currentSource;
-        this.location = currentLocation;
-        this.timeRemaining = currentTimeRemaining;
+        this.plot = currentLocation;
     }
 
     public String getSource() {
@@ -30,25 +28,17 @@ public class MessageText extends Notification{
         this.source = source;
     }
 
-    public String getLocation() {
-        return location;
+    public String getPlot() {
+        return plot;
     }
 
     public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public int getTimeRemaining() {
-        return timeRemaining;
-    }
-
-    public void setTimeRemaining(int timeRemaining) {
-        this.timeRemaining = timeRemaining;
+        this.plot = location;
     }
 
     @Override
     public String toString()
     {
-        return "Source: " +source + "Location: " + location + "Time remaining: " + timeRemaining;
+        return "Source: " +source + "Location: " + plot ;
     }
 }

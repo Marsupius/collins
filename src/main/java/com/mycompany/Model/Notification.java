@@ -14,30 +14,27 @@ import java.io.Serializable;
 public class Notification extends SuperList implements Printable, Serializable {
 
     private String location;
-    private String subject;
-    private String timeLeft;
+    private String plot;
 
-    public Notification(String location, String subject, String timeLeft) {
+    public Notification(String location, String plot) {
         this.location = location;
-        this.subject = subject;
-        this.timeLeft = timeLeft;
+        this.plot = plot;
     }
 
-    public String getSubject() {
-        return subject;
+    public String getPlot() {
+        return this.plot;
     }
 
     @Override
     public String toString() {
-        return "Notification{" + "location='" + location + '\'' + ", subject='" + subject + '\'' + ", timeLeft='" +
-                timeLeft + '\'' + '}';
+        return "Location - " + location + ", Plot - " + plot;
     }
 
     @Override
     public void print() {
         System.out.println("Printing Notification");
     }
-    public void task(){
-        System.out.println("Notification Task");
-    }
+  
+    
+    
 }

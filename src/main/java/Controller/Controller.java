@@ -1,6 +1,6 @@
 package Controller;
 
-import View.View;
+
 import com.mycompany.Model.Model;
 import com.mycompany.Model.Notification;
 
@@ -18,37 +18,41 @@ import javax.swing.*;
  */
 public class Controller {
     private Model model;
-    private View view;
 
 
 
-    public Controller(Model model, View view) {
-        this.view = view;
+    public Controller(Model model) {
         this.model = model;
     }
 
-    public ListModel<Notification> getToDOModel(){
+    public ListModel<Notification> getModel(){
         return this.model;
     }
 
-    public void addStudent(String location, String subject, String timeLeft){
+    public void addNotification(String location, String plot){
         boolean add = true;
-        Notification n;
+        Notification s;
         for (int i = 0; i < this.model.getSize(); i++){
-            n = this.model.getElementAt(i);
-            if (n.getSubject().equals(subject)){
+            s = this.model.getElementAt(i);
+            if (s.getPlot().equals(plot)){
                 add = false;
+                break;
             }
         }
         if (add){
-            this.model.addNotification(location, subject, timeLeft);
+            this.model.addNotification(location, plot);
         }
         else{
-            System.out.println("The Student's name is identical to another previously entered student name. Please try again");
+            System.out.println("The Notification is identical to another previously entered student name. Please try again");
         }
     }
+    //duplicate filtering didnt work, cant figure out why
+    
+    
 
-    public void removeStudent(int[] studentIndices){
-        this.model.removeNotification(studentIndices);
+    public void removeNotification(int[] notificationIndices){
+        this.model.removeNotification(notificationIndices);
+        System.out.println("Notification removed (from controller)");
     }
 }
+
