@@ -1,11 +1,11 @@
 package com.mycompany.Model;
 
-import sun.plugin2.ipc.windows.WindowsEvent;
 
 import javax.swing.*;
 import javax.swing.event.ListDataEvent;
 import javax.swing.event.ListDataListener;
 import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.*;
 import java.util.ArrayList;
 
@@ -19,9 +19,10 @@ public class Model extends WindowAdapter implements ListModel<Notification> {
 
     public Model(){
         this.notifications = new ArrayList<>();
-        this.notifications.add(new Notification("Ardougne", "Herb Patch", "1:30:00"));
-        this.notifications.add(new Notification("Fossil Island", "Birdhouse Trap", "8:00:00"));
-        this.notifications.add(new Notification("Port Phasmatys", "Herb Patch", "Done"));
+        this.listeners = new ArrayList<>();
+        this.notifications.add(new Notification("Ardougne", "Herb Allotment"));
+        this.notifications.add(new Notification("Fossil Island", "Birdhouse Trap"));
+        this.notifications.add(new Notification("Port Phasmatys", "Herb Allotment"));
 
         //persistant data
         FileInputStream fis;
@@ -44,8 +45,8 @@ public class Model extends WindowAdapter implements ListModel<Notification> {
         this.notifications.add(notifications);
     }
 
-    public void addNotification(String location, String subject, String timeLeft) {
-        this.notifications.add(new Notification(location, subject, timeLeft));
+    public void addNotification(String location, String plot) {
+        this.notifications.add(new Notification(location, plot));
         ListDataListener l;
         for (int i = 0; i < this.listeners.size(); i++) {
             l = this.listeners.get(i);
@@ -53,28 +54,32 @@ public class Model extends WindowAdapter implements ListModel<Notification> {
                     new ListDataEvent(this, INTERVAL_ADDED, this.notifications.size() - 1, this.notifications.size() - 1)
             );
         }
-        //adding persistant data to file
-        FileOutputStream fos;
-        ObjectOutputStream oos;
 
-        try {
-            fos = new FileOutputStream("NotificationList");
-            oos = new ObjectOutputStream(fos);
-            oos.writeObject(this.notifications);
-        } catch (IOException ex ){
-            System.out.println("Something went wrong");
-        }
+        //uncomment for persistance
+
+//        //adding persistant data to file
+//        FileOutputStream fos;
+//        ObjectOutputStream oos;
+//
+//        try {
+//            fos = new FileOutputStream("NotificationList");
+//            oos = new ObjectOutputStream(fos);
+//            oos.writeObject(this.notifications);
+//        } catch (IOException ex ){
+//            System.out.println("Something went wrong");
+//        }
     }
 
-    public void removeNotification(int[] studentIndices) {
-        for (int i = studentIndices.length -1; i >= studentIndices.length; i--) {
-            this.notifications.remove(studentIndices[i]);
+    public void removeNotification(int[] notificationIndices) {
+        for (int i = 0; i <= notificationIndices.length; i++) {
+            this.notifications.remove(notificationIndices[i]);
             ListDataListener l;
             for (int j = 0; j < this.listeners.size(); j++) {
                 l = this.listeners.get(j);
                 l.intervalRemoved(
-                        new ListDataEvent(this, INTERVAL_REMOVED, studentIndices[i], studentIndices[i])
+                        new ListDataEvent(this, INTERVAL_REMOVED, notificationIndices[i], notificationIndices[i])
                 );
+                System.out.println("Notification removed (from model)");
             }
         }
     }
@@ -100,7 +105,7 @@ public class Model extends WindowAdapter implements ListModel<Notification> {
         this.listeners.remove(l);
     }
 
-    public void windowClosing(WindowsEvent e){
+    public void windowClosing(WindowEvent e){
         //save all notifications
         //System.out.println("Window closing");
         //persistant data
