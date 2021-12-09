@@ -54,6 +54,7 @@ public class RLApp
                 Model model = new Model();
                 Controller controller = new Controller(model);
                 MainUI view = new MainUI(controller);
+                view.addWindowListener(model);
                 view.setVisible(true);
             }
         });
