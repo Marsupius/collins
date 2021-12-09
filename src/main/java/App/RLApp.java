@@ -44,7 +44,7 @@ public class RLApp
             java.util.logging.Logger.getLogger(MainUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
+        //</editor-fold+>
         //</editor-fold>
         //</editor-fold>
 
